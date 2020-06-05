@@ -1,7 +1,9 @@
-classes = (('V', 1), ('VI', 1), ('V', 2), ('VI', 2), ('VI', 3), ('VII', 1))
-counts = dict()
+import datetime
 
-from div in classes :
-    counts[div] = counts.get(div, 0) + 1
+yr = int(input("Enter year: "))
+mon = int(input("Enter month: "))
+day = int(input("Enter day: "))
 
-print(counts)
+x = datetime.datetime(yr,mon,day)
+
+print(int(x.strftime("%W"))+1)
